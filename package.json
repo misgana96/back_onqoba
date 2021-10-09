@@ -6,6 +6,8 @@
     "node": ">=6"
   },
   "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
     "lint": "eslint .",
     "postinstall": "npm run build",
     "start": "node .",
