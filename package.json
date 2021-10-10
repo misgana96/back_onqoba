@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
-    "node": ">=6"
+    "node": "8.x"
   },
   "scripts": {
-    "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
     "clean": "lb-clean",
     "lint": "npm run prettier:check && npm run eslint",
