@@ -22,7 +22,7 @@
     "start": "npm run build && node .",
     "prepublishOnly": "npm run test",
     "postinstall": "npm run build",
-    "start:prod": "node dist/index.js"
+    "start:prod": "node index.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
