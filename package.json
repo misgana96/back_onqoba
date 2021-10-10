@@ -6,6 +6,7 @@
     "node": "8.x"
   },
   "scripts": {
+    "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
     "clean": "lb-clean",
     "lint": "npm run prettier:check && npm run eslint",
