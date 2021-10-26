@@ -6,23 +6,9 @@
     "node": "8.x"
   },
   "scripts": {
-    "build": "lb-tsc",
-    "build:watch": "lb-tsc --watch",
-    "clean": "lb-clean",
-    "lint": "npm run prettier:check && npm run eslint",
-    "lint:fix": "npm run prettier:fix && npm run eslint:fix",
-    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
-    "prettier:check": "npm run prettier:cli -- -l",
-    "prettier:fix": "npm run prettier:cli -- --write",
-    "eslint": "lb-eslint --report-unused-disable-directives .",
-    "eslint:fix": "npm run eslint -- --fix",
-    "pretest": "npm run clean && npm run build",
-    "test": "lb-mocha \"dist/__tests__\"",
-    "posttest": "npm run lint",
-    "start": "npm run build && node .",
-    "prepublishOnly": "npm run test",
-    "postinstall": "npm run build",
-    "start:prod": "node index.js"
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint"
   },
   "dependencies": {
     "compression": "^1.0.3",
